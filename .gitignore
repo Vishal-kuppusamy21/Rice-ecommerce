@@ -44,4 +44,5 @@ bun.lockb
 audit_report.txt
 mermaid_out.txt
 mermaid_out2.txt
-*.png
+# Generated diagram PNGs (root level only)
+/*.png

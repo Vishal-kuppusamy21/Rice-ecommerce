@@ -1,5 +1,6 @@
-const API_URL = 'http://localhost:5000/api';
-export const SERVER_URL = 'http://localhost:5000';
+const SERVER_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = `${SERVER_BASE}/api`;
+export const SERVER_URL = SERVER_BASE;
 
 export const getImageUrl = (path: string) => {
     if (!path) return '';

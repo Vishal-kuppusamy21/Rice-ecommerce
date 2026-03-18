@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/ui/loader";
 import { useParams, useNavigate } from "react-router-dom";
 import { useStore } from "@/store/useStore";
-import { api } from "@/lib/api";
+import { api, SERVER_URL } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -199,7 +199,7 @@ const AdminOrderDetail = () => {
                                 <div key={index} className="flex items-center gap-4 p-4 hover:bg-secondary/20 transition-colors">
                                     <div className="h-14 w-14 bg-muted rounded-xl overflow-hidden flex-shrink-0 ring-1 ring-border">
                                         <img
-                                            src={item.image?.startsWith('/') ? `http://localhost:5000${item.image}` : item.image}
+                                            src={item.image?.startsWith('/') ? `${SERVER_URL}${item.image}` : item.image}
                                             alt={item.name}
                                             className="h-full w-full object-cover"
                                         />

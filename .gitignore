@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend / Server
+server/
+
+# Documentation (not needed in frontend repo)
+docs/
+
+# Lock files (keep package-lock.json, ignore bun)
+bun.lockb
+
+# Temp / generated files
+audit_report.txt
+mermaid_out.txt
+mermaid_out2.txt
+*.png
